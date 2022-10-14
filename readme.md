@@ -1,23 +1,23 @@
-connect 4
 
 
+#connect 4
 
+![wireframe](wireframe.png)
 
-declare variables
+-Declare variables that need to be defined before game starts.
 
-listen for player to choose color
+-Listen for player to choose color from red or blue to start game. Only one will be selectable per game.
 
-set curser to player color choice
+-Set curser to player color choice. 
 
-player chooses a spot to put in color 
+-Player will have to choose a column to "drop" the piece into the board by clicking on a spot directly or the column.
 
-computer only allows one color per spot and cant be changed 
+-Computer will put piece into the next vertical spot.
 
-only allow player to place color in start row (bottom) or above a filled spot
+-The computer will only allow for one color per spot and it will not be able to be changed once selected. 
 
-loop through players while making choices untill board is full or 4 of the same colors are in a row
+-Program will loop through players taking turns placing pieces in board untill board is full or 4 of the same colors are in a row. Program will identify which player's turn it is and output the text to a message under game. 
 
-once a win or tie condition is met display message and end game
+-Once a win or tie condition is met display message congradulating the winner and end game.
 
-be able to reset game
-
+-Player will be able to reset game at anytime.
