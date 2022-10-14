@@ -1,6 +1,6 @@
 
 
-#connect 4
+# Connect 4
 
 ![wireframe](wireframe.png)
 
