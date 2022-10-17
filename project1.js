@@ -53,20 +53,33 @@ function setBlue(event) {
 console.log(currentPlayer)
 
 //function to set up cursor on mouse click change cell color
-let playerSelector = function() {
-    if (currentPlayer = 'red') {
-        return redFill;
-    } else {
-        currentPlayer = 'blue'
-        return bluefill;
-    }
-}
+//* might not need this code
+// let playerSelector = function() {
+//     if (currentPlayer = 'red') {
+//         return redFill;
+//     } else {
+//         currentPlayer = 'blue'
+//         return bluefill;
+//     }
+// }
 
 //start listiner to for grid and return which space player selected
+//* not working correctly
+let playerColorSelector = {
+    if (currentPlayer = 'red') {
+        console.log(red)
+     } else {
+        // return document.getElementById('cell1').style.background = 'blue' 
+        consolse.log(blue)
+     }
+ }
+//*
+
+
+
 cell1.addEventListener('click', a)
-function a(event) {
-    console.log('cell1')
-}
+function a(playerColorSelector) {}
+
 cell2.addEventListener('click', b)
 function b(event) {
     console.log('cell2')
@@ -129,6 +142,7 @@ function p(event) {
 }
 
 //function for setting backgorund fill
+
 //use current player to chenge space to current players color
 //rule for clicking on filled squares
 //program needs to loop checking for win, tie conditions untill one is met
