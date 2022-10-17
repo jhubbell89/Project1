@@ -1,5 +1,5 @@
 //variables needed to run game before it starts
-const cells = document.querySelectorAll ("grid");
+const cells = document.querySelectorAll ("grid")
 const statusText = document.querySelector ("#messagedisplay")
 const restartBtn = document.querySelector ("#resetbtn")
 const redBtn = document.querySelector ("#redplayerbtn")
@@ -23,15 +23,26 @@ let currentPlayer = 'x'
 //event listener waits for player to choose either red or blue
 redBtn.addEventListener('click', setRed)
 function setRed(event) {
-    console.log('clicked')
+    console.log('red')
 }
 blueBtn.addEventListener('click', setBlue)
 function setBlue(event) {
-    console.log('clicked')
+    console.log('blue')
 }
 //function to determine current player set by event handler
-//display current player
+// let playerSelector = function() {
+//     if   = true {
+//        return currentPlayer = ;
+//     } else result = false {
+//         return currentPlayer = blue;
+//         result = 
+//     }
+// }
+// const red = 
 
+
+//display current player
+statusText.textContent = `${currentPlayer}'s turn`
 
 //start listiner to for grid and return which space player selected
 
@@ -44,4 +55,4 @@ function setBlue(event) {
 
 
 // reset button 
-
+restartBtn.addEventListener('click',)
