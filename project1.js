@@ -18,31 +18,36 @@ const winConditions = [
 ]
 
 //need to wait for player to choose which color they are
-let currentPlayer = 'x'
+let currentPlayer = 
 
 //event listener waits for player to choose either red or blue
 redBtn.addEventListener('click', setRed)
 function setRed(event) {
-    console.log('red')
+    console.log('red');
+    currentPlayer = 'red';
+    console.log(currentPlayer);
+    statusText.textContent = `${currentPlayer}'s turn`
 }
 blueBtn.addEventListener('click', setBlue)
 function setBlue(event) {
-    console.log('blue')
+    console.log('blue');
+    currentPlayer = "blue";
+    console.log(currentPlayer);
+    statusText.textContent = `${currentPlayer}'s turn`
 }
+console.log(currentPlayer)
 //function to determine current player set by event handler
-// let playerSelector = function() {
-//     if   = true {
-//        return currentPlayer = ;
-//     } else result = false {
-//         return currentPlayer = blue;
-//         result = 
-//     }
-// }
-// const red = 
+let playerSelector = function() {
+    if  currentPlayer = 'red';
+        return redFill
+    } else  {
+        currentPlayer = 'blue';
+        return bluefill
+    }
+}
 
 
-//display current player
-statusText.textContent = `${currentPlayer}'s turn`
+
 
 //start listiner to for grid and return which space player selected
 
@@ -55,4 +60,4 @@ statusText.textContent = `${currentPlayer}'s turn`
 
 
 // reset button 
-restartBtn.addEventListener('click',)
+
