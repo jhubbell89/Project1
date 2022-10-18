@@ -79,246 +79,269 @@ function setBlue(event) {
 
 cell1.addEventListener('click', a)
 function a() {
-    if (currentPlayer == '') {
-        document.getElementById('cell1').style.backgroundColor = 'white';
-       
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell1').style.backgroundColor = 'red'
-
-        cell1.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell1').style.backgroundColor = 'blue'
-
-        cell1.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell5.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell1').style.backgroundColor = 'yellow';
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell1').style.backgroundColor = 'red'
+            cell1.classList.add('full')
+            cell1.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell1').style.backgroundColor = 'blue'
+            cell1.classList.add('full')
+            cell1.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell2.addEventListener('click', b)
 function b(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell2').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell2').style.backgroundColor = 'red'
-
-        cell2.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell2').style.backgroundColor = 'blue'
-
-        cell2.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell6.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell2').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell2').style.backgroundColor = 'red'
+            cell2.classList.add('full')
+            cell2.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell2').style.backgroundColor = 'blue'
+            cell2.classList.add('full')
+            cell2.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell3.addEventListener('click', c)
 function c(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell3').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell3').style.backgroundColor = 'red'
-
-        cell3.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell3').style.backgroundColor = 'blue'
-
-        cell3.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell7.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell3').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell3').style.backgroundColor = 'red'
+            cell3.classList.add('full')
+            cell3.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell3').style.backgroundColor = 'blue'
+            cell3.classList.add('full')
+            cell3.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell4.addEventListener('click', d)
 function d(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell4').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell4').style.backgroundColor = 'red'
-
-        cell4.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell4').style.backgroundColor = 'blue'
-
-        cell4.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell8.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell4').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell4').style.backgroundColor = 'red'
+            cell4.classList.add('full')
+            cell4.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell4').style.backgroundColor = 'blue'
+            cell4.classList.add('full')
+            cell4.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell5.addEventListener('click', e)
 function e(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell5').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell5').style.backgroundColor = 'red'
-
-        cell5.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell5').style.backgroundColor = 'blue'
-
-        cell5.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell9.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell5').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell5').style.backgroundColor = 'red'
+            cell5.classList.add('full')
+            cell5.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell5').style.backgroundColor = 'blue'
+            cell5.classList.add('full')
+            cell5.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell6.addEventListener('click', f)
 function f(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell6').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell6').style.backgroundColor = 'red'
-
-        cell6.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell6').style.backgroundColor = 'blue'
-
-        cell6.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell10.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell6').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell6').style.backgroundColor = 'red'
+            cell6.classList.add('full')
+            cell6.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell6').style.backgroundColor = 'blue'
+            cell6.classList.add('full')
+            cell6.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell7.addEventListener('click', g)
 function g(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell7').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell7').style.backgroundColor = 'red'
-
-        cell7.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell7').style.backgroundColor = 'blue'
-
-        cell7.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell11.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell7').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell7').style.backgroundColor = 'red'
+            cell7.classList.add('full')
+            cell7.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell7').style.backgroundColor = 'blue'
+            cell7.classList.add('full')
+            cell7.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell8.addEventListener('click', h)
 function h(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell8').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell8').style.backgroundColor = 'red'
-
-        cell8.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell8').style.backgroundColor = 'blue'
-
-        cell8.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell12.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell8').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell8').style.backgroundColor = 'red'
+            cell8.classList.add('full')
+            cell8.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell8').style.backgroundColor = 'blue'
+            cell8.classList.add('full')
+            cell8.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell9.addEventListener('click', i)
 function i(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell9').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell9').style.backgroundColor = 'red'
-
-        cell9.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell9').style.backgroundColor = 'blue'
-
-        cell9.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell13.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell9').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell9').style.backgroundColor = 'red'
+            cell9.classList.add('full')
+            cell9.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell9').style.backgroundColor = 'blue'
+            cell9.classList.add('full')
+            cell9.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell10.addEventListener('click', j)
 function j(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell10').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell10').style.backgroundColor = 'red'
-
-        cell10.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell10').style.backgroundColor = 'blue'
-
-        cell10.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell14.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell10').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell10').style.backgroundColor = 'red'
+            cell10.classList.add('full')
+            cell10.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell10').style.backgroundColor = 'blue'
+            cell10.classList.add('full')
+            cell10.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell11.addEventListener('click', k)
 function k(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell11').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell11').style.backgroundColor = 'red'
-
-        cell11.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell11').style.backgroundColor = 'blue'
-
-        cell11.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell15.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell11').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell11').style.backgroundColor = 'red'
+            cell11.classList.add('full')
+            cell11.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell11').style.backgroundColor = 'blue'
+            cell11.classList.add('full')
+            cell11.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell12.addEventListener('click', l)
 function l(event) {
-    if (currentPlayer == '') {
-        document.getElementById('cell12').style.backgroundColor = 'white'
-    } else if  (currentPlayer == 'red') {
-        document.getElementById('cell12').style.backgroundColor = 'red'
-
-        cell12.classList.add('red')
-        currentPlayer = 'blue'
-        statusText.textContent = `${currentPlayer}'s turn`
-    } else { currentPlayer == 'blue'
-        document.getElementById('cell12').style.backgroundColor = 'blue'
-
-        cell12.classList.add('blue')
-        currentPlayer = 'red'
-        statusText.textContent = `${currentPlayer}'s turn`
-    }
-    checkWin()
+    if (cell16.classList.contains('full')) {
+        if (currentPlayer == '') {
+            document.getElementById('cell12').style.backgroundColor = 'yellow'
+        } else if  (currentPlayer == 'red') {
+            document.getElementById('cell12').style.backgroundColor = 'red'
+            cell12.classList.add('full')
+            cell12.classList.add('red')
+            currentPlayer = 'blue'
+            statusText.textContent = `${currentPlayer}'s turn`
+        } else { currentPlayer == 'blue'
+            document.getElementById('cell12').style.backgroundColor = 'blue'
+            cell12.classList.add('full')
+            cell12.classList.add('blue')
+            currentPlayer = 'red'
+            statusText.textContent = `${currentPlayer}'s turn`
+        }
+        checkWin()
+    } else {statusText.textContent = 'Cant go here!'}
 }
 cell13.addEventListener('click', m)
 function m(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell13').style.backgroundColor = 'white'
+        document.getElementById('cell13').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell13').style.backgroundColor = 'red'
-
+        cell13.classList.add('full')
         cell13.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell13').style.backgroundColor = 'blue'
-
+        cell13.classList.add('full')
         cell13.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
@@ -328,16 +351,16 @@ function m(event) {
 cell14.addEventListener('click', n)
 function n(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell14').style.backgroundColor = 'white'
+        document.getElementById('cell14').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell14').style.backgroundColor = 'red'
-
+        cell14.classList.add('full')
         cell14.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell14').style.backgroundColor = 'blue'
-
+        cell14.classList.add('full')
         cell14.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
@@ -346,16 +369,16 @@ function n(event) {
 cell15.addEventListener('click', o)
 function o(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell15').style.backgroundColor = 'white'
+        document.getElementById('cell15').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell15').style.backgroundColor = 'red'
-
+        cell15.classList.add('full')
         cell15.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell15').style.backgroundColor = 'blue'
-
+        cell15.classList.add('full')
         cell15.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
@@ -364,31 +387,29 @@ function o(event) {
 }
 cell16.addEventListener('click', p)
 function p(event) {
-    if 
-        if (currentPlayer == '') {
-            document.getElementById('cell16').style.backgroundColor = 'white'
-        } else if  (currentPlayer == 'red') {
-            document.getElementById('cell16').style.backgroundColor = 'red'
-
-            cell16.classList.add('red')
-            currentPlayer = 'blue'
-            statusText.textContent = `${currentPlayer}'s turn`
-        } else { currentPlayer == 'blue'
-            document.getElementById('cell16').style.backgroundColor = 'blue'
-
-            cell16.classList.add('blue')
-            currentPlayer = 'red'
-            statusText.textContent = `${currentPlayer}'s turn`
-        }
-    else statusText.textContent = 'Cant go here!'
+    if (currentPlayer == '') {
+        document.getElementById('cell16').style.backgroundColor = 'yellow'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell16').style.backgroundColor = 'red'
+        cell16.classList.add('full')
+        cell16.classList.add('red')
+        currentPlayer = 'blue'
+       statusText.textContent = `${currentPlayer}'s turn`
+    } else { currentPlayer == 'blue'
+       document.getElementById('cell16').style.backgroundColor = 'blue'
+       cell16.classList.add('full')
+        cell16.classList.add('blue')
+        currentPlayer = 'red'
+        statusText.textContent = `${currentPlayer}'s turn`
+    }
     checkWin()
 }
 
 //reset button 
 restartBtn.addEventListener('click', y)
 function y(event) {
-    document.getElementsByClassName('red').style.backgroundColor = 'yellow'
-
+    document.getElementsByClassName('full').style.backgroundColor = 'yellow'
+    console.log('clicked')
     currentPlayer = ''
     statusText.textContent = 'Pick a color'
 }
