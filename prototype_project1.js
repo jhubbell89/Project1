@@ -1,5 +1,5 @@
 //variables needed to run game before it starts
-const board = document.querySelector ('.board')
+const board = document.querySelector ('.board div')
 const cell1 = document.querySelector ("#cell1")
 const cell2 = document.querySelector ("#cell2")
 const cell3 = document.querySelector ("#cell3")
@@ -65,16 +65,12 @@ let currentPlayer = ''
 //event listener waits for player to choose either red or blue
 redBtn.addEventListener('click', setRed)
 function setRed(event) {
-    console.log('red');
     currentPlayer = 'red';
-    console.log(currentPlayer);
     statusText.textContent = `${currentPlayer}'s turn`
 }
 blueBtn.addEventListener('click', setBlue)
 function setBlue(event) {
-    console.log('blue');
     currentPlayer = "blue";
-    console.log(currentPlayer);
     statusText.textContent = `${currentPlayer}'s turn`
 }
 
@@ -164,12 +160,14 @@ function e(event) {
         document.getElementById('cell5').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell5').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell5.classList.add('full')
+        cell5.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell5').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell5.classList.add('full')
+        cell5.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -181,13 +179,14 @@ function f(event) {
         document.getElementById('cell6').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell6').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
-        currentPlayer = 'red'
+        cell6.classList.add('full')
+        cell6.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell6').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell6.classList.add('full')
+        cell6.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -198,13 +197,14 @@ function g(event) {
         document.getElementById('cell7').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell7').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
-        currentPlayer = 'red'
+        cell7.classList.add('full')
+        cell7.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell7').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell7.classList.add('full')
+        cell7.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -215,13 +215,14 @@ function h(event) {
         document.getElementById('cell8').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell8').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
-        currentPlayer = 'red'
+        cell8.classList.add('full')
+        cell8.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell8').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell8.classList.add('full')
+        cell8.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -232,13 +233,14 @@ function i(event) {
         document.getElementById('cell9').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell9').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
-        currentPlayer = 'red'
+        cell8.classList.add('full')
+        cell8.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell9').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell8.classList.add('full')
+        cell8.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -249,14 +251,14 @@ function j(event) {
         document.getElementById('cell10').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell10').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell10.classList.add('full')
+        cell10.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell10').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell10.classList.add('full')
+        cell10.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -267,14 +269,14 @@ function k(event) {
         document.getElementById('cell11').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell11').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell11.classList.add('full')
+        cell11.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell11').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell11.classList.add('full')
+        cell11.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -285,14 +287,14 @@ function l(event) {
         document.getElementById('cell12').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell12').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell12.classList.add('full')
+        cell12.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell12').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell12.classList.add('full')
+        cell12.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -303,14 +305,14 @@ function m(event) {
         document.getElementById('cell13').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell13').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell13.classList.add('full')
+        cell13.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell13').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell13.classList.add('full')
+        cell13.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -321,14 +323,14 @@ function n(event) {
         document.getElementById('cell14').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell14').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell14.classList.add('full')
+        cell14.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell14').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell14.classList.add('full')
+        cell14.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -339,14 +341,14 @@ function o(event) {
         document.getElementById('cell15').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell15').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell15.classList.add('full')
+        cell15.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell15').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell15.classList.add('full')
+        cell15.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
@@ -357,14 +359,14 @@ function p(event) {
         document.getElementById('cell16').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell16').style.backgroundColor = 'red'
-        cell1.classList.add('full')
-        cell1.classList.add('red')
+        cell16.classList.add('full')
+        cell16.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell16').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
-        cell1.classList.add('blue')
+        cell16.classList.add('full')
+        cell16.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
