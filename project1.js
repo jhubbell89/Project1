@@ -57,64 +57,131 @@ function setBlue(event) {
 cell1.addEventListener('click', a)
 function a() {
     if (currentPlayer == 'red') {
-        document.getElementById('cell1').style.backgroundColor = "red"
-    } else { currentPlayer == "blue"
-        document.getElementById('cell1').style.backgroundColor = "blue"
-    }
-        
-    console.log('cell1');
-    console.log(currentPlayer)
-    
+        document.getElementById('cell1').style.backgroundColor = 'red'
+    } else { 
+        document.getElementById('cell1').style.backgroundColor = 'blue'
+    }      
 }
 
 cell2.addEventListener('click', b)
 function b(event) {
-    console.log('cell2')
+    if (currentPlayer == 'red') {
+        document.getElementById('cell2').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell2').style.backgroundColor = "blue"
+    }      
 }
 cell3.addEventListener('click', c)
 function c(event) {
-    console.log('cell3')
+    if (currentPlayer == 'red') {
+        document.getElementById('cell3').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell3').style.backgroundColor = "blue"
+    }      
 }
 cell4.addEventListener('click', d)
 function d(event) {
-    console.log('cell4')
+    if (currentPlayer == 'red') {
+        document.getElementById('cell4').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell4').style.backgroundColor = "blue"
+    }      
 }
 cell5.addEventListener('click', e)
 function e(event) {
-    console.log('cell5')
+    if (currentPlayer == 'red') {
+        document.getElementById('cell5').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell5').style.backgroundColor = "blue"
+    }      
 }
 cell6.addEventListener('click', f)
 function f(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell6').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell6').style.backgroundColor = "blue"
+    }      
 }
 cell7.addEventListener('click', g)
 function g(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell7').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell7').style.backgroundColor = "blue"
+    }      
 }
 cell8.addEventListener('click', h)
 function h(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell8').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell8').style.backgroundColor = "blue"
+    }      
 }
 cell9.addEventListener('click', i)
 function i(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell9').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell9').style.backgroundColor = "blue"
+    }      
 }
 cell10.addEventListener('click', j)
 function j(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell10').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell10').style.backgroundColor = "blue"
+    }      
 }
 cell11.addEventListener('click', k)
 function k(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell11').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell11').style.backgroundColor = "blue"
+    }      
 }
 cell12.addEventListener('click', l)
 function l(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell12').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell12').style.backgroundColor = "blue"
+    }      
 }
 cell13.addEventListener('click', m)
 function m(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell13').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell13').style.backgroundColor = "blue"
+    }      
 }
 cell14.addEventListener('click', n)
 function n(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell14').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell14').style.backgroundColor = "blue"
+    }      
 }
 cell15.addEventListener('click', o)
 function o(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell15').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell15').style.backgroundColor = "blue"
+    }      
 }
 cell16.addEventListener('click', p)
 function p(event) {
+    if (currentPlayer == 'red') {
+        document.getElementById('cell16').style.backgroundColor = "red"
+    } else { 
+        document.getElementById('cell16').style.backgroundColor = "blue"
+    }      
 }
 
 //function for setting backgorund fill
