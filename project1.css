@@ -4,7 +4,7 @@
     grid-template-rows: repeat(4, 75px);
     justify-self: center;
     align-self: center;
-    background-color: rgba(232, 232, 3, 0.715);
+    background-color:yellow;
     max-width: 300px;
     }
     

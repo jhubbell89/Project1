@@ -80,7 +80,7 @@ function setBlue(event) {
 cell1.addEventListener('click', a)
 function a() {
     if (currentPlayer == '') {
-        document.getElementById('cell1').style.backgroundColor = 'white';
+        document.getElementById('cell1').style.backgroundColor = 'yellow';
        
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell1').style.backgroundColor = 'red'
@@ -100,7 +100,7 @@ function a() {
 cell2.addEventListener('click', b)
 function b(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell2').style.backgroundColor = 'white'
+        document.getElementById('cell2').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell2').style.backgroundColor = 'red'
 
@@ -119,7 +119,7 @@ function b(event) {
 cell3.addEventListener('click', c)
 function c(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell3').style.backgroundColor = 'white'
+        document.getElementById('cell3').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell3').style.backgroundColor = 'red'
 
@@ -138,7 +138,7 @@ function c(event) {
 cell4.addEventListener('click', d)
 function d(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell4').style.backgroundColor = 'white'
+        document.getElementById('cell4').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell4').style.backgroundColor = 'red'
 
@@ -157,7 +157,7 @@ function d(event) {
 cell5.addEventListener('click', e)
 function e(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell5').style.backgroundColor = 'white'
+        document.getElementById('cell5').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell5').style.backgroundColor = 'red'
 
@@ -176,7 +176,7 @@ function e(event) {
 cell6.addEventListener('click', f)
 function f(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell6').style.backgroundColor = 'white'
+        document.getElementById('cell6').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell6').style.backgroundColor = 'red'
 
@@ -195,7 +195,7 @@ function f(event) {
 cell7.addEventListener('click', g)
 function g(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell7').style.backgroundColor = 'white'
+        document.getElementById('cell7').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell7').style.backgroundColor = 'red'
 
@@ -214,7 +214,7 @@ function g(event) {
 cell8.addEventListener('click', h)
 function h(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell8').style.backgroundColor = 'white'
+        document.getElementById('cell8').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell8').style.backgroundColor = 'red'
 
@@ -233,7 +233,7 @@ function h(event) {
 cell9.addEventListener('click', i)
 function i(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell9').style.backgroundColor = 'white'
+        document.getElementById('cell9').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell9').style.backgroundColor = 'red'
 
@@ -252,7 +252,7 @@ function i(event) {
 cell10.addEventListener('click', j)
 function j(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell10').style.backgroundColor = 'white'
+        document.getElementById('cell10').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell10').style.backgroundColor = 'red'
 
@@ -271,7 +271,7 @@ function j(event) {
 cell11.addEventListener('click', k)
 function k(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell11').style.backgroundColor = 'white'
+        document.getElementById('cell11').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell11').style.backgroundColor = 'red'
 
@@ -290,7 +290,7 @@ function k(event) {
 cell12.addEventListener('click', l)
 function l(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell12').style.backgroundColor = 'white'
+        document.getElementById('cell12').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell12').style.backgroundColor = 'red'
 
@@ -309,7 +309,7 @@ function l(event) {
 cell13.addEventListener('click', m)
 function m(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell13').style.backgroundColor = 'white'
+        document.getElementById('cell13').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell13').style.backgroundColor = 'red'
 
@@ -328,7 +328,7 @@ function m(event) {
 cell14.addEventListener('click', n)
 function n(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell14').style.backgroundColor = 'white'
+        document.getElementById('cell14').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell14').style.backgroundColor = 'red'
 
@@ -346,7 +346,7 @@ function n(event) {
 cell15.addEventListener('click', o)
 function o(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell15').style.backgroundColor = 'white'
+        document.getElementById('cell15').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell15').style.backgroundColor = 'red'
 
@@ -365,7 +365,7 @@ function o(event) {
 cell16.addEventListener('click', p)
 function p(event) {
     if (currentPlayer == '') {
-        document.getElementById('cell16').style.backgroundColor = 'white'
+        document.getElementById('cell16').style.backgroundColor = 'yellow'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell16').style.backgroundColor = 'red'
 
@@ -383,3 +383,10 @@ function p(event) {
 }
 
 //reset button 
+restartBtn.addEventListener('click', y)
+function y(event) {
+    document.getElementsByClassName('red' || 'blue').style.backgroundColor = 'yellow'
+
+    currentPlayer = ''
+    statusText.textContent = 'Pick a color'
+}
