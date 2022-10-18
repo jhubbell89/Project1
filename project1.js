@@ -33,7 +33,7 @@ const winConditions = [
 ]
 
 //need to wait for player to choose which color they are
-let currentPlayer = 
+let currentPlayer = ''
 
 //event listener waits for player to choose either red or blue
 redBtn.addEventListener('click', setRed)
@@ -56,10 +56,10 @@ function setBlue(event) {
 
 cell1.addEventListener('click', a)
 function a() {
-    if (currentPlayer = 'blue') {
-        document.getElementById('cell1').style.backgroundColor = 'red'
-    } else {
-        document.getElementById('cell1').style.backgroundColor = 'blue'
+    if (currentPlayer == 'red') {
+        document.getElementById('cell1').style.backgroundColor = "red"
+    } else { currentPlayer == "blue"
+        document.getElementById('cell1').style.backgroundColor = "blue"
     }
         
     console.log('cell1');
