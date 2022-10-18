@@ -1,5 +1,5 @@
 //variables needed to run game before it starts
-const board = document.querySelector ('.board div')
+const board = document.querySelectorAll ('.board div')
 const cell1 = document.querySelector ("#cell1")
 const cell2 = document.querySelector ("#cell2")
 const cell3 = document.querySelector ("#cell3")
@@ -47,7 +47,7 @@ function checkWin() {
             spot3.classList.contains('red') &&
             spot4.classList.contains('red')
         )
-        statusText.textContent = `${currentPlayer} Wins!!!`
+        statusText.textContent = `Red Wins!!!`
 
         if (
             spot1.classList.contains('blue') &&
@@ -55,7 +55,7 @@ function checkWin() {
             spot3.classList.contains('blue') &&
             spot4.classList.contains('blue')
         )
-        statusText.textContent = `${currentPlayer} Wins!!!`
+        statusText.textContent = `Blue Wins!!!`
     }
 }
 
@@ -84,18 +84,18 @@ function a() {
        
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell1').style.backgroundColor = 'red'
-        cell1.classList.add('full')
+
         cell1.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell1').style.backgroundColor = 'blue'
-        cell1.classList.add('full')
+
         cell1.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
-    checkWin
+    checkWin()
 }
 cell2.addEventListener('click', b)
 function b(event) {
@@ -103,18 +103,18 @@ function b(event) {
         document.getElementById('cell2').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell2').style.backgroundColor = 'red'
-        cell2.classList.add('full')
+
         cell2.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell2').style.backgroundColor = 'blue'
-        cell2.classList.add('full')
+
         cell2.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
-    checkWin
+    checkWin()
 }
 cell3.addEventListener('click', c)
 function c(event) {
@@ -122,18 +122,18 @@ function c(event) {
         document.getElementById('cell3').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell3').style.backgroundColor = 'red'
-        cell3.classList.add('full')
+
         cell3.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell3').style.backgroundColor = 'blue'
-        cell3.classList.add('full')
+
         cell3.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
-    checkWin
+    checkWin()
 }
 cell4.addEventListener('click', d)
 function d(event) {
@@ -141,18 +141,18 @@ function d(event) {
         document.getElementById('cell4').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell4').style.backgroundColor = 'red'
-        cell4.classList.add('full')
+
         cell4.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell4').style.backgroundColor = 'blue'
-        cell4.classList.add('full')
+
         cell4.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
-    checkWin
+    checkWin()
 }
 cell5.addEventListener('click', e)
 function e(event) {
@@ -160,18 +160,18 @@ function e(event) {
         document.getElementById('cell5').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell5').style.backgroundColor = 'red'
-        cell5.classList.add('full')
+
         cell5.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell5').style.backgroundColor = 'blue'
-        cell5.classList.add('full')
+
         cell5.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
-    checkWin
+    checkWin()
 }
 cell6.addEventListener('click', f)
 function f(event) {
@@ -179,17 +179,18 @@ function f(event) {
         document.getElementById('cell6').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell6').style.backgroundColor = 'red'
-        cell6.classList.add('full')
+
         cell6.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell6').style.backgroundColor = 'blue'
-        cell6.classList.add('full')
+
         cell6.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell7.addEventListener('click', g)
 function g(event) {
@@ -197,17 +198,18 @@ function g(event) {
         document.getElementById('cell7').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell7').style.backgroundColor = 'red'
-        cell7.classList.add('full')
+
         cell7.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell7').style.backgroundColor = 'blue'
-        cell7.classList.add('full')
+
         cell7.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell8.addEventListener('click', h)
 function h(event) {
@@ -215,17 +217,18 @@ function h(event) {
         document.getElementById('cell8').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell8').style.backgroundColor = 'red'
-        cell8.classList.add('full')
+
         cell8.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell8').style.backgroundColor = 'blue'
-        cell8.classList.add('full')
+
         cell8.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell9.addEventListener('click', i)
 function i(event) {
@@ -233,17 +236,18 @@ function i(event) {
         document.getElementById('cell9').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell9').style.backgroundColor = 'red'
-        cell8.classList.add('full')
-        cell8.classList.add('red')
+
+        cell9.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell9').style.backgroundColor = 'blue'
-        cell8.classList.add('full')
-        cell8.classList.add('blue')
+
+        cell9.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell10.addEventListener('click', j)
 function j(event) {
@@ -251,17 +255,18 @@ function j(event) {
         document.getElementById('cell10').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell10').style.backgroundColor = 'red'
-        cell10.classList.add('full')
+
         cell10.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell10').style.backgroundColor = 'blue'
-        cell10.classList.add('full')
+
         cell10.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell11.addEventListener('click', k)
 function k(event) {
@@ -269,17 +274,18 @@ function k(event) {
         document.getElementById('cell11').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell11').style.backgroundColor = 'red'
-        cell11.classList.add('full')
+
         cell11.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell11').style.backgroundColor = 'blue'
-        cell11.classList.add('full')
+
         cell11.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell12.addEventListener('click', l)
 function l(event) {
@@ -287,17 +293,18 @@ function l(event) {
         document.getElementById('cell12').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell12').style.backgroundColor = 'red'
-        cell12.classList.add('full')
+
         cell12.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell12').style.backgroundColor = 'blue'
-        cell12.classList.add('full')
+
         cell12.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell13.addEventListener('click', m)
 function m(event) {
@@ -305,17 +312,18 @@ function m(event) {
         document.getElementById('cell13').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell13').style.backgroundColor = 'red'
-        cell13.classList.add('full')
+
         cell13.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell13').style.backgroundColor = 'blue'
-        cell13.classList.add('full')
+
         cell13.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell14.addEventListener('click', n)
 function n(event) {
@@ -323,13 +331,13 @@ function n(event) {
         document.getElementById('cell14').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell14').style.backgroundColor = 'red'
-        cell14.classList.add('full')
+
         cell14.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell14').style.backgroundColor = 'blue'
-        cell14.classList.add('full')
+
         cell14.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
@@ -341,17 +349,18 @@ function o(event) {
         document.getElementById('cell15').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell15').style.backgroundColor = 'red'
-        cell15.classList.add('full')
+
         cell15.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell15').style.backgroundColor = 'blue'
-        cell15.classList.add('full')
+
         cell15.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell16.addEventListener('click', p)
 function p(event) {
@@ -359,17 +368,18 @@ function p(event) {
         document.getElementById('cell16').style.backgroundColor = 'white'
     } else if  (currentPlayer == 'red') {
         document.getElementById('cell16').style.backgroundColor = 'red'
-        cell16.classList.add('full')
+
         cell16.classList.add('red')
         currentPlayer = 'blue'
         statusText.textContent = `${currentPlayer}'s turn`
     } else { currentPlayer == 'blue'
         document.getElementById('cell16').style.backgroundColor = 'blue'
-        cell16.classList.add('full')
+
         cell16.classList.add('blue')
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 
 
