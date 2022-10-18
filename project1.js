@@ -50,32 +50,21 @@ function setBlue(event) {
     console.log(currentPlayer);
     statusText.textContent = `${currentPlayer}'s turn`
 }
-console.log(currentPlayer)
-
-//function to set up cursor on mouse click change cell color
-//* might not need this code
-let playerSelector = function() {
-    if (currentPlayer = 'red') {
-        return redFill;
-    } else {
-        currentPlayer = 'blue'
-        return bluefill;
-    }
-}
 
 //start listiner to for grid and return which space player selected
-//* not working correctly
-let redfill = function() {
-    return document.getElementById('cell1').style.background = 'blue' 
-}
-//*
-
-
+//function to set up cursor on mouse click change cell color
 
 cell1.addEventListener('click', a)
-function a(event) {
-    console.log('cell1')
+function a() {
+    if (currentPlayer = 'blue') {
+        document.getElementById('cell1').style.backgroundColor = 'red'
+    } else {
+        document.getElementById('cell1').style.backgroundColor = 'blue'
+    }
+        
+    console.log('cell1');
     console.log(currentPlayer)
+    
 }
 
 cell2.addEventListener('click', b)
@@ -96,47 +85,36 @@ function e(event) {
 }
 cell6.addEventListener('click', f)
 function f(event) {
-    console.log('cell6')
 }
 cell7.addEventListener('click', g)
 function g(event) {
-    console.log('cell7')
 }
 cell8.addEventListener('click', h)
 function h(event) {
-    console.log('cell8')
 }
 cell9.addEventListener('click', i)
 function i(event) {
-    console.log('cell9')
 }
 cell10.addEventListener('click', j)
 function j(event) {
-    console.log('cell10')
 }
 cell11.addEventListener('click', k)
 function k(event) {
-    console.log('cell11')
 }
 cell12.addEventListener('click', l)
 function l(event) {
-    console.log('cell12')
 }
 cell13.addEventListener('click', m)
 function m(event) {
-    console.log('cell13')
 }
 cell14.addEventListener('click', n)
 function n(event) {
-    console.log('cell14')
 }
 cell15.addEventListener('click', o)
 function o(event) {
-    console.log('cell15')
 }
 cell16.addEventListener('click', p)
 function p(event) {
-    console.log('cell16')
 }
 
 //function for setting backgorund fill
