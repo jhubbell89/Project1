@@ -32,6 +32,32 @@ const winConditions = [
     [3, 6, 9, 12]
 ]
 
+//program needs to loop checking for win, tie conditions untill one is met and display message
+function checkWin() {
+    for (let z = 0; z < winConditions.length; z++) {
+        const spot1 = cell1[winConditions[z][0]]
+        const spot2 = squares[winConditions[z][1]]
+        const spot3 = squares[winConditions[z][2]]
+        const spot4 = squares[winConditions[z][3]]
+
+        if (
+            spot1.classList.contains('red') &&
+            spot2.classList.contains('red') &&
+            spot3.classList.contains('red') &&
+            spot4.classList.contains('red')
+        )
+        statusText.textContent = `${currentPlayer} Wins!!!`
+
+        if (
+            spot1.classList.contains('blue') &&
+            spot2.classList.contains('blue') &&
+            spot3.classList.contains('blue') &&
+            spot4.classList.contains('blue')
+        )
+        statusText.textContent = `${currentPlayer} Wins!!!`
+    }
+}
+
 //need to wait for player to choose which color they are
 let currentPlayer = ''
 
@@ -56,138 +82,207 @@ function setBlue(event) {
 
 cell1.addEventListener('click', a)
 function a() {
-    if (currentPlayer == 'red') {
+    if (currentPlayer == '') {
+        document.getElementById('cell1').style.backgroundColor = 'white';
+       
+    } else if  (currentPlayer == 'red') {
         document.getElementById('cell1').style.backgroundColor = 'red'
-    } else { 
+        cell1.classList.add('full')
+        cell1.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
+    } else { currentPlayer == 'blue'
         document.getElementById('cell1').style.backgroundColor = 'blue'
-    }      
+        cell1.classList.add('full')
+        cell1.classList.add('blue')
+        currentPlayer = 'red'
+        statusText.textContent = `${currentPlayer}'s turn`
+    }
+    checkWin
 }
-
 cell2.addEventListener('click', b)
 function b(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell2').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell2').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell2').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell2').style.backgroundColor = 'red'
+        cell2.classList.add('full')
+        cell2.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell2').style.backgroundColor = 'blue'
+        cell2.classList.add('full')
+        cell2.classList.add('blue')
+        currentPlayer = 'red'
+        statusText.textContent = `${currentPlayer}'s turn`
+    }
+    checkWin
 }
 cell3.addEventListener('click', c)
 function c(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell3').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell3').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell3').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell3').style.backgroundColor = 'red'
+        cell3.classList.add('full')
+        cell3.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell3').style.backgroundColor = 'blue'
+        cell3.classList.add('full')
+        cell3.classList.add('blue')
+        currentPlayer = 'red'
+        statusText.textContent = `${currentPlayer}'s turn`
+    }
+    checkWin
 }
 cell4.addEventListener('click', d)
 function d(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell4').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell4').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell4').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell4').style.backgroundColor = 'red'
+        cell4.classList.add('full')
+        cell4.classList.add('red')
+        currentPlayer = 'blue'
+        statusText.textContent = `${currentPlayer}'s turn`
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell4').style.backgroundColor = 'blue'
+        cell4.classList.add('full')
+        cell4.classList.add('blue')
+        currentPlayer = 'red'
+        statusText.textContent = `${currentPlayer}'s turn`
+    }
+    checkWin
 }
 cell5.addEventListener('click', e)
 function e(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell5').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell5').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell5').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell5').style.backgroundColor = 'red'
+        cell1.classList.add('full')
+        cell1.classList.add('red')
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell5').style.backgroundColor = 'blue'
+        cell1.classList.add('full')
+        cell1.classList.add('blue')
+    }
+    checkWin
 }
 cell6.addEventListener('click', f)
 function f(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell6').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell6').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell6').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell6').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell6').style.backgroundColor = 'blue'
+    }
 }
 cell7.addEventListener('click', g)
 function g(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell7').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell7').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell7').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell7').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell7').style.backgroundColor = 'blue'
+    }
 }
 cell8.addEventListener('click', h)
 function h(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell8').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell8').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell8').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell8').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell8').style.backgroundColor = 'blue'
+    }
 }
 cell9.addEventListener('click', i)
 function i(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell9').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell9').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell9').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell9').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell9').style.backgroundColor = 'blue'
+    }
 }
 cell10.addEventListener('click', j)
 function j(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell10').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell10').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell10').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell10').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell10').style.backgroundColor = 'blue'
+    }
 }
 cell11.addEventListener('click', k)
 function k(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell11').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell11').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell11').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell11').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell11').style.backgroundColor = 'blue'
+    }
 }
 cell12.addEventListener('click', l)
 function l(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell12').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell12').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell12').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell12').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell12').style.backgroundColor = 'blue'
+    }
 }
 cell13.addEventListener('click', m)
 function m(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell13').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell13').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell13').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell13').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell13').style.backgroundColor = 'blue'
+    }
 }
 cell14.addEventListener('click', n)
 function n(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell14').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell14').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell14').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell14').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell14').style.backgroundColor = 'blue'
+    }
 }
 cell15.addEventListener('click', o)
 function o(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell15').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell15').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell15').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell15').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell15').style.backgroundColor = 'blue'
+    }
 }
 cell16.addEventListener('click', p)
 function p(event) {
-    if (currentPlayer == 'red') {
-        document.getElementById('cell16').style.backgroundColor = "red"
-    } else { 
-        document.getElementById('cell16').style.backgroundColor = "blue"
-    }      
+    if (currentPlayer == '') {
+        document.getElementById('cell16').style.backgroundColor = 'white'
+    } else if  (currentPlayer == 'red') {
+        document.getElementById('cell16').style.backgroundColor = 'red'
+    } else { currentPlayer == 'blue'
+        document.getElementById('cell16').style.backgroundColor = 'blue'
+    }
 }
 
-//function for setting backgorund fill
 
-//use current player to chenge space to current players color
-//rule for clicking on filled squares
-//program needs to loop checking for win, tie conditions untill one is met
-//display message when win / tie condition met
+
 //reset button 
