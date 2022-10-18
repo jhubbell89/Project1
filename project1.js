@@ -54,31 +54,29 @@ console.log(currentPlayer)
 
 //function to set up cursor on mouse click change cell color
 //* might not need this code
-// let playerSelector = function() {
-//     if (currentPlayer = 'red') {
-//         return redFill;
-//     } else {
-//         currentPlayer = 'blue'
-//         return bluefill;
-//     }
-// }
+let playerSelector = function() {
+    if (currentPlayer = 'red') {
+        return redFill;
+    } else {
+        currentPlayer = 'blue'
+        return bluefill;
+    }
+}
 
 //start listiner to for grid and return which space player selected
 //* not working correctly
-let playerColorSelector = {
-    if (currentPlayer = 'red') {
-        console.log(red)
-     } else {
-        // return document.getElementById('cell1').style.background = 'blue' 
-        consolse.log(blue)
-     }
- }
+let redfill = function() {
+    return document.getElementById('cell1').style.background = 'blue' 
+}
 //*
 
 
 
 cell1.addEventListener('click', a)
-function a(playerColorSelector) {}
+function a(event) {
+    console.log('cell1')
+    console.log(currentPlayer)
+}
 
 cell2.addEventListener('click', b)
 function b(event) {
