@@ -1,4 +1,5 @@
 //variables needed to run game before it starts
+const board = document.querySelector ('.board')
 const cell1 = document.querySelector ("#cell1")
 const cell2 = document.querySelector ("#cell2")
 const cell3 = document.querySelector ("#cell3")
@@ -35,10 +36,10 @@ const winConditions = [
 //program needs to loop checking for win, tie conditions untill one is met and display message
 function checkWin() {
     for (let z = 0; z < winConditions.length; z++) {
-        const spot1 = cell1[winConditions[z][0]]
-        const spot2 = squares[winConditions[z][1]]
-        const spot3 = squares[winConditions[z][2]]
-        const spot4 = squares[winConditions[z][3]]
+        const spot1 = board[winConditions[z][0]]
+        const spot2 = board[winConditions[z][1]]
+        const spot3 = board[winConditions[z][2]]
+        const spot4 = board[winConditions[z][3]]
 
         if (
             spot1.classList.contains('red') &&
