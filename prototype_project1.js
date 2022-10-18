@@ -382,6 +382,4 @@ function p(event) {
     checkWin()
 }
 
-
-
 //reset button 
