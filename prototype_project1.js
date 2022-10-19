@@ -14,7 +14,17 @@ const winConditions = [
     [2, 6, 10, 14],
     [3, 7, 11, 15],
     [0, 5, 10, 15],
-    [3, 6, 9, 12]
+    [3, 6, 9, 12],
+    [2, 3, 4, 5],
+    [3, 4, 5, 6],
+    [8, 9, 10, 11],
+    [9, 10, 11, 12],
+    [14, 15, 16, 17],
+    [15, 16, 17, 18],
+    [20, 21, 22, 23],
+    [21, 22, 23, 24],
+    [25, 26, 27, 28],
+    
 ]
 
 //program needs to loop checking for win, tie conditions untill one is met and display message
@@ -62,7 +72,7 @@ function setBlue(event) {
 //function to set up cursor on mouse click change cell color
 for (let z = 0; z < board.length; z++) {
     board[z].onclick = () => {
-            if (board[z+5].classList.contains('full') &&!board[z].classList.contains('full')) {
+            if (board[z+7].classList.contains('full') &&!board[z].classList.contains('full')) {
                 if (currentplayer == 'red') {
                     board[z].classList.add('full')
                     board[z].classslist.add('red')
