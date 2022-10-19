@@ -365,6 +365,7 @@ function n(event) {
         currentPlayer = 'red'
         statusText.textContent = `${currentPlayer}'s turn`
     }
+    checkWin()
 }
 cell15.addEventListener('click', o)
 function o(event) {

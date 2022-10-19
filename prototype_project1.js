@@ -408,8 +408,19 @@ for (let z = 0; z < board.length; z++) {
     board[z].onclick.function()
         return {
             if (board[z + 5].classList.contains('full') &&!board[z].classList.contains('full')) {
-                if 
-            }
+                if (currentplayer == 'red') {
+                    board[z].classList.add('full')
+                    board[z].classslist.add('red')
+                    currentplayer = 'blue'
+                    statusText.textContent = `${currentPlayer}'s turn`
+                } else if (currentPlayer == 'blue') {
+                    board[z].classList.add('full')
+                    board[z].classList.add('full')
+                    currentPlayer = 'red'
+                    statusText.textContent = `${currentPlayer}'s turn`
+                }
+            } else {statusText.textContent = 'Cant go here!'}
+            checkwin()
         }
 }
 
