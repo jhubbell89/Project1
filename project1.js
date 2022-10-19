@@ -408,8 +408,6 @@ function p(event) {
 //reset button 
 restartBtn.addEventListener('click', y)
 function y(event) {
-    document.getElementsByClassName('full').style.backgroundColor = 'yellow'
-    console.log('clicked')
-    currentPlayer = ''
-    statusText.textContent = 'Pick a color'
+    location.reload();
+    return false;
 }
