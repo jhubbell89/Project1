@@ -1,30 +1,14 @@
 .board {
     display: grid;
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: repeat(4, 75px);
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(6, 50px);
     justify-self: center;
     align-self: center;
     background-color:yellow;
-    max-width: 300px;
+    max-width: 302px;
+    max-height: 302px;
     }
-    
-    #1 { grid-area: 1 / 1 / 2 / 2; }
-    #2 { grid-area: 1 / 2 / 2 / 3; }
-    #3 { grid-area: 1 / 3 / 2 / 4; }
-    #4 { grid-area: 1 / 4 / 2 / 5; }
-    #5 { grid-area: 2 / 1 / 3 / 2; }
-    #6 { grid-area: 2 / 2 / 3 / 3; }
-    #7 { grid-area: 2 / 3 / 3 / 4; }
-    #8 { grid-area: 2 / 4 / 3 / 5; }
-    #9 { grid-area: 3 / 1 / 4 / 2; }
-    #10 { grid-area: 3 / 2 / 4 / 3; }
-    #11 { grid-area: 3 / 3 / 4 / 4; }
-    #12 { grid-area: 3 / 4 / 4 / 5; }
-    #13 { grid-area: 4 / 1 / 5 / 2; }
-    #14 { grid-area: 4 / 2 / 5 / 3; }
-    #15 { grid-area: 4 / 3 / 5 / 4; }
-    #16 { grid-area: 4 / 4 / 5 / 5; }
-
+ 
 .control {
 display: grid;
 grid-template-columns: repeat(2, 150px);
@@ -32,7 +16,6 @@ grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
-
     #messagedisplay { grid-area: 1 / 1 / 2 / 3; }
     #redplayerbtn { grid-area: 2 / 1 / 3 / 2; 
         background-color: red;
@@ -44,11 +27,11 @@ grid-row-gap: 0px;
         background-color: green;
     }
 
-.grid {
-    height: 75px;
-    width: 75px;
+.board div{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
     border-radius: 50%;
-background-color: white;
 }
 .controls {
     margin: 10px 30px;
@@ -67,6 +50,14 @@ h1 {
 h3 {
     text-align: center;
 }
-.full {
+.blue {
+    background-color: blue;
     border-radius: 50%;
+}
+.red {
+    background-color: red;
+    border-radius: 50%;
+}
+.full.hide {
+    border-color:rgb(233, 228, 228);
 }
