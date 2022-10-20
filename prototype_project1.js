@@ -122,8 +122,8 @@ for (let z = 0; z < board.length; z++) {
 }
 
 //reset button 
-restartBtn.addEventListener('click', y)
-function y(event) {
+restartBtn.addEventListener('click', x)
+function x(event) {
     location.reload();
     return false;
 }
