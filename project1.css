@@ -90,3 +90,9 @@ h3 {
 .full {
     border-radius: 50%;
 }
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
