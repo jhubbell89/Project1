@@ -2,8 +2,12 @@
 
 # Connect 4
 
-Web address!!!
+
+play it on Git
+
+Web address for my personal site!!!
 https://commemorable-wiggle.000webhostapp.com/
+
 
 ![wireframe](wireframe.png)
 
