@@ -1,30 +1,64 @@
 //variables needed to run game before it starts
-const board = document.querySelectorAll ('.board div')
+const board = document.querySelectorAll ('.board')
 const statusText = document.querySelector ("#messagedisplay")
 const restartBtn = document.querySelector ("#resetbtn")
 const redBtn = document.querySelector ("#redplayerbtn")
 const blueBtn = document.querySelector ("#blueplayerbtn")
 const winConditions = [
+    [0, 7, 14, 21],
+    [1, 8, 15, 22],
+    [2, 9, 16, 23],
+    [6, 13, 20, 27],
+    [7, 14, 21, 28],
+    [8, 15, 22, 29],
+    [12, 19, 26, 33],
+    [13, 20, 27, 34],
+    [14, 21, 28, 35],
+    [3, 8, 13, 18],
+    [4, 9, 14, 19],
+    [5, 10, 15, 20],
+    [9, 14, 19, 24],
+    [10, 15, 20, 25],
+    [11, 16, 21, 26],
+    [15, 20, 25, 30],
+    [16, 21, 26, 31],
+    [17, 22, 27, 28],
     [0, 1, 2, 3],
-    [4, 5, 6, 7],
-    [8, 9, 10, 11],
+    [6, 7, 8, 9],
     [12, 13, 14, 15],
-    [0, 4, 8, 12],
-    [1, 5, 9, 13],
-    [2, 6, 10, 14],
-    [3, 7, 11, 15],
-    [0, 5, 10, 15],
-    [3, 6, 9, 12],
-    [2, 3, 4, 5],
-    [3, 4, 5, 6],
-    [8, 9, 10, 11],
-    [9, 10, 11, 12],
-    [14, 15, 16, 17],
-    [15, 16, 17, 18],
-    [20, 21, 22, 23],
-    [21, 22, 23, 24],
+    [18, 19, 20, 21],
+    [24, 25, 26, 27],
+    [30, 31, 32, 33],
+    [1, 2, 3, 4],
+    [7, 8, 9, 10],
+    [13, 14, 15, 16],
+    [19, 20, 21, 22],
     [25, 26, 27, 28],
-    
+    [31, 32, 33, 34],
+    [2, 3, 4, 5],
+    [8, 9, 10, 11],
+    [14, 15, 16, 17],
+    [20, 21, 22, 23],
+    [26, 27, 28, 29],
+    [32, 33, 34, 35],
+    [0, 6, 12, 18],
+    [1, 7, 13, 19],
+    [2, 8, 14, 20],
+    [3, 9, 15, 21],
+    [4, 10, 16, 22],
+    [5, 11, 17, 23],
+    [6, 12, 18, 24],
+    [7, 13, 19, 25],
+    [8, 14, 20, 26],
+    [9, 15, 21, 27],
+    [10, 16, 22, 28],
+    [11, 17, 23, 29],
+    [12, 18, 24, 30],
+    [13, 19, 25, 31],
+    [14, 20, 26, 32],
+    [15, 21, 27, 33],
+    [16, 22, 28, 34],
+    [17, 23, 29, 35]
 ]
 
 //program needs to loop checking for win, tie conditions untill one is met and display message
@@ -72,17 +106,19 @@ function setBlue(event) {
 //function to set up cursor on mouse click change cell color
 for (let z = 0; z < board.length; z++) {
     board[z].onclick = () => {
-            if (board[z+7].classList.contains('full') &&!board[z].classList.contains('full')) {
-                if (currentplayer == 'red') {
+            if (board[z+6].classList.contains('full') &&!board[z].classList.contains('full')) {
+                if (currentPlayer == 'red') {
                     board[z].classList.add('full')
-                    board[z].classslist.add('red')
-                    currentplayer = 'blue'
+                    board[z].classlist.add('red')
+                    currentPlayer = 'blue'
                     statusText.textContent = `${currentPlayer}'s turn`
+                    document.getElementById('z').style.backgroundColor = 'red'
                 } else if (currentPlayer == 'blue') {
                     board[z].classList.add('full')
                     board[z].classList.add('full')
                     currentPlayer = 'red'
                     statusText.textContent = `${currentPlayer}'s turn`
+                    document.getElementById('z').style.backgroundColor = 'blue'
                 }
             } else {statusText.textContent = 'Cant go here!'}
             checkWin()
