@@ -8,8 +8,8 @@ Connect 4 is a game of skill played against another player to get 4 pieces of th
 
 ![wireframe](wireframe.png)
 ![pic1](pic1.png)
-![pic2](pic1.png)
-![pic3](pic1.png)
+![pic2](pic2.png)
+![pic3](pic3.png)
 
 
 Technnologies used: HTML, CSS, Javascript and paint. 
