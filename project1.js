@@ -95,26 +95,24 @@ redBtn.addEventListener('click', setRed)
 function setRed(event) {
     currentPlayer = 'red';
     statusText.textContent = `${currentPlayer}'s turn`
+    redBtn.removeEventListener('click', setRed)
 }
 blueBtn.addEventListener('click', setBlue)
 function setBlue(event) {
     currentPlayer = "blue";
     statusText.textContent = `${currentPlayer}'s turn`
+    blueBtn.removeEventListener('click', setBlue)
 }
 
 //start listiner to for grid and return which space player selected
 //function to set up cursor on mouse click change cell color
-
 for (let z = 0; z < board.length; z++) {
     board[z].addEventListener('click', divSetup)
     function divSetup(event) {
         if (statusText.textContent === 'Blue Wins!!!') {
             board[z].removeEventListener('click', divSetup,);
-            console.log(statusText.textContent)
-
         } else if (statusText.textContent === 'Red Wins!!!') {
             board[z].removeEventListener('click', divSetup,);
-               
         } else {
             if (board[z + 6].classList.contains('full') &&!board[z].classList.contains('full')) {
                 if (currentPlayer == 'red') {
