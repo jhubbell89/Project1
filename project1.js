@@ -129,7 +129,6 @@ for (let z = 0; z < board.length; z++) {
             } else {statusText.textContent = 'Cant go here!'}
             checkWin()
         }   
-    console.log(statusText.textContent) 
     }
 }
 
