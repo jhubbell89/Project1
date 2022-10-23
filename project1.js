@@ -61,7 +61,7 @@ const winConditions = [
     [17, 23, 29, 35]
 ]
 
-//program needs to loop checking for win, tie conditions untill one is met and display message
+//program needs to loop checking for win conditions untill it is met and display message
 function checkWin() {
     for (let y = 0; y < winConditions.length; y++) {
         const spot1 = board[winConditions[y][0]]
@@ -73,15 +73,17 @@ function checkWin() {
             spot2.classList.contains('red') &&
             spot3.classList.contains('red') &&
             spot4.classList.contains('red')
-        )
-        statusText.textContent = `Red Wins!!!`
+        ) {
+        statusText.textContent = `Red Wins!!!`;
+        }
         if (
             spot1.classList.contains('blue') &&
             spot2.classList.contains('blue') &&
             spot3.classList.contains('blue') &&
             spot4.classList.contains('blue')
-        )
-        statusText.textContent = `Blue Wins!!!`
+        ) {
+        statusText.textContent = `Blue Wins!!!`;
+        }
     }
 }
 
@@ -102,8 +104,18 @@ function setBlue(event) {
 
 //start listiner to for grid and return which space player selected
 //function to set up cursor on mouse click change cell color
+
 for (let z = 0; z < board.length; z++) {
-    board[z].onclick = () => {
+    board[z].addEventListener('click', divSetup)
+    function divSetup(event) {
+        if (statusText.textContent === 'Blue Wins!!!') {
+            board[z].removeEventListener('click', divSetup,);
+            console.log(statusText.textContent)
+
+        } else if (statusText.textContent === 'Red Wins!!!') {
+            board[z].removeEventListener('click', divSetup,);
+               
+        } else {
             if (board[z + 6].classList.contains('full') &&!board[z].classList.contains('full')) {
                 if (currentPlayer == 'red') {
                     board[z].classList.add('full')
@@ -118,7 +130,9 @@ for (let z = 0; z < board.length; z++) {
                 }
             } else {statusText.textContent = 'Cant go here!'}
             checkWin()
-        }
+        }   
+    console.log(statusText.textContent) 
+    }
 }
 
 //reset button 
